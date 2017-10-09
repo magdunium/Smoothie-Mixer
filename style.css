@@ -1,0 +1,20 @@
+body{
+    background-color: rgba(227, 247, 218, 0);
+}
+
+.jumbotron{
+    background-color: #E9E9E9;
+}
+
+.output{
+    width: 50%;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #E9E9E9;
+  }

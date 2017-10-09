@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">        
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+<title>Smoothie Mixer pre-alpha</title>
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <medium>Powered by: <a class="navbar-right" href="http://pinkunicornstudio.pl">Pink Unicorn Studio</a>
+            </medium></div>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <a href='http://pinkunicornstudio.pl'><img src="pus-logo.png"></a>
+        <h1>Smoothie Mixer</h1>
+        <p>Version: pre-alpha</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Wybierz składniki do smoothie:</h3>
+                <form>
+                    <input type="checkbox" name="component" value="fruits"> Owoce<br>
+                    <input type="checkbox" name="component" value="vegetables"> Warzywa <br> 
+                    <input type="checkbox" name="component" value="extras"> Dodatki np. płatki owsiane, białko <br>
+                    <input type="checkbox" name="component" value="seeds"> Orzechy i rodzynki <br>
+                </form><br>
+                <button type="button" class="btn btn-success" onclick="getCheckedCheckboxesFor('component')">Generuj przepis</button>
+            </div>
+            <div class="col-sm-6">
+                <h3>Twój przepis na Smoothie!</h3>
+                <textarea class='output' name="output" rows="6" id='output'></textarea>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">2017 Copyright - <a href="http://pinkunicornstudio.pl">Pink Unicorn Studio</a></span>
+        </div>
+    </footer>
+</body>
+</html>
